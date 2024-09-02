@@ -41,6 +41,23 @@ nav ul li a:hover {
   background-color: #654321; /* Efeito de hover com tom marrom mais claro */
 }
 
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #e1c1a0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.submenu li {
+  display: block;
+  padding: 10px;
+}
+
+nav li:hover .submenu {
+  display: block;
+}
+
 /* Estilo para o container principal */
 .container {
   padding: 20px;
