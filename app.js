@@ -80,7 +80,7 @@ router.get("/listaPet", function (req, res) {
 
 /* ---------------------------------------------------------  */
 
-router.get("/del-pagamento/:id", function (req, res) {
+router.get("/del-pet/:id", function (req, res) {
   CadastroPet.destroy({
     where: { id: req.params.id },
   })
@@ -95,13 +95,13 @@ router.get("/del-pagamento/:id", function (req, res) {
 
 /* --------  */
 
-router.get("/edit-pagamento/:id", function (req, res) {
+router.get("/edit-pet/:id", function (req, res) {
   CadastroPet.findByPk(req.params.id).then(function (animais) {
     res.render("editar", { animais: animais });
   });
 });
 
-router.post("/edit-pagamento/:id", function (req, res) {
+router.post("/edit-pet/:id", function (req, res) {
   CadastroPet.update(
     {
       nome: req.body.nome,
@@ -191,8 +191,8 @@ router.post("/edit-veterinario/:id", function (req, res) {
 app.use("/", router);
 app.use("/cadastroPet", router);
 app.use("/listaPet", router);
-app.use("/del-pagamento/:id", router);
-app.use("/edit-pagamento/:id", router);
+app.use("/del-pet/:id", router);
+app.use("/edit-pet/:id", router);
 
 app.use("/cadastroVeterinario", router);
 app.use("/listaVeterinario", router);
