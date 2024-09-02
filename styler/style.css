@@ -93,3 +93,57 @@ form button:active {
   background-color: #3e2a17; /* Tom de marrom mais escuro no clique */
   transform: scale(0.98); /* Efeito de clique, ligeiro encolhimento */
 }
+
+.article {
+  /* background-color: rgb(68, 66, 66); */
+
+  background: linear-gradient(to left bottom, #a9c4d6, #b8c7f1);
+
+  background: var(--azul);
+
+  /* min-height: 80%; */
+
+  height: 80vh;
+  /*  <---------<<<  a propriedade [ vh ] permite adaptar o conteudo na área visualizada */
+
+  /* float: right; */
+  /* float: left; */
+
+  /* width: 80%;
+    
+    min-height: 20%;
+    background-color: orange; */
+
+  /* margin: 0% 1% 0% 1%; */
+
+  padding-top: 0% 4% 0% 4%;
+
+  display: flex;
+
+  flex-direction: row;
+
+  flex-wrap: wrap;
+
+  /* flex-wrap: nowrap; */
+
+  /* flex-flow: row wrap; */
+
+  justify-content: center;
+  /* justify-content: space-around; */
+
+  justify-content: space-evenly;
+
+  /* align-content: space-evenly; */
+
+  align-items: center;
+
+  /* flex-grow: 1; */
+
+  /* align-content: center; */
+
+  overflow-y: scroll;
+  /*  <--  Todo conteudo se adapta inserindo uma barra de rolagem  */
+
+  scrollbar-width: none;
+  /* <--- A Barra de rolagem deixa de ser exibida no FireFox */
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós - Meu Petshop</title>
+    <link rel="stylesheet" href="styler/style.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cadastroPet">Pets</a></li>
+        <li><a href="/cadastroVeterinario">Veterinários</a></li>
+        <li><a href="/sobre">Sobre</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>
+          O Meu Petshop é mais do que apenas um pet shop. Somos apaixonados por
+          animais e acreditamos que eles merecem o melhor cuidado. Nossa equipe
+          é composta por profissionais altamente qualificados e dedicados, que
+          oferecem uma gama completa de serviços para o bem-estar do seu pet.
+        </p>
+        <p>
+          Nossa missão é proporcionar um ambiente acolhedor e seguro para os
+          animais, onde eles possam receber todo o carinho e atenção que
+          precisam.
+        </p>
+        <img src="equipe.jpg" alt="Nossa Equipe" />
+      </section>
+      <section id="contato" class="article">
+        <h2>Entre em Contato</h2>
+        <form
+          action="mailto:seu_email@example.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

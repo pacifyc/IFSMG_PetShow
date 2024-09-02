@@ -35,6 +35,10 @@ app.use(express.json());
 
 //Rotas
 
+router.get("/sobre", function (req, res) {
+  res.sendFile(path.join(__dirname + "/sobre.html"));
+});
+
 router.get("/cadastroVeterinario", function (req, res) {
   res.sendFile(path.join(__dirname + "/cadastroVeterinario.html"));
 });
@@ -194,5 +198,7 @@ app.use("/cadastroVeterinario", router);
 app.use("/listaVeterinario", router);
 app.use("/del-veterinario/:id", router);
 app.use("/edit-veterinario/:id", router);
+
+app.use("/sobre", router);
 
 app.listen(8080);
