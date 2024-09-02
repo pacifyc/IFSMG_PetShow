@@ -1,0 +1,20 @@
+<h1>Listar de Veterinarios Cadastrado</h1>
+
+{{#each veterinarios}}
+  ID:
+  {{id}}<br />
+  Nome:
+  {{nome}}<br />
+  CRMV:
+  {{crmv}}<br />
+  Especialidade:
+  {{especialidade}}<br />
+  Contato:
+  {{contato}}<br />
+  Cadastrado:
+  {{#formatDate createdAt}}{{/formatDate}}<br />
+  <a href="/del-veterinario/{{id}}"><button>Apagar</button></a>
+  <br />
+  <a href="/edit-veterinario/{{id}}"><button>Editar</button></a>
+  <hr />
+{{/each}}

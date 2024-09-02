@@ -1,0 +1,18 @@
+<h1>Formulário</h1>
+<form action="/edit-pagamento/{{animais.id}}" method="POST">
+
+  ID:
+  {{animais.id}}
+  <label>Nome</label>
+  <input type="text" name="nome" value="{{animais.nome}}" /><br /><br />
+  <label>Especie</label>
+  <input type="text" name="especie" value="{{animais.especie}}" /><br /><br />
+  <label>Nome</label>
+  <input type="text" name="raca" value="{{animais.raca}}" /><br /><br />
+  <label>Idade</label>
+  <input type="number" name="idade" value="{{animais.idade}}" /><br /><br />
+  <label>Observações</label>
+  <input type="text" name="observacoes" value="{{animais.observacoes}}" /><br
+  /><br />
+  <button type="sumbit">Atualizar</button>
+</form>

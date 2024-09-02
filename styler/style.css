@@ -1,0 +1,95 @@
+/* Estilo para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f7f3f1; */ /* Cor de fundo em tom branco suave */
+  background-color: rgb(
+    218,
+    176,
+    138
+  ); /* Mude o fundo para vermelho temporariamente */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para o menu de navegação */
+nav {
+  background-color: #4b3621; /* Tom de marrom escuro */
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px; /* Cantos arredondados */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+nav ul li a:hover {
+  background-color: #654321; /* Efeito de hover com tom marrom mais claro */
+}
+
+/* Estilo para o container principal */
+.container {
+  padding: 20px;
+  background-color: #fff; /* Cor branca */
+  margin: 20px auto;
+  max-width: 300px;
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o formulário */
+form {
+  margin: 20px 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #4b3621; /* Cor de texto marrom */
+}
+
+form input,
+form button {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px; /* Cantos arredondados */
+  border: 1px solid #ccc;
+  width: 100%; /* Largura total */
+  box-sizing: border-box; /* Inclui preenchimento na largura total */
+}
+
+form input:focus {
+  border-color: #f39537; /* Borda marrom ao focar */
+  outline: none; /* Remove o contorno padrão do navegador */
+}
+
+form button {
+  background-color: #4b3621; /* Tom de marrom */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s; /* Transição suave e efeito de clique */
+}
+
+form button:hover {
+  background-color: #654321; /* Efeito de hover com tom marrom mais claro */
+}
+
+form button:active {
+  background-color: #3e2a17; /* Tom de marrom mais escuro no clique */
+  transform: scale(0.98); /* Efeito de clique, ligeiro encolhimento */
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Pets</title>
+    <link rel="stylesheet" href="/styler/style.css" />
+  </head>
+  <body>
+    <!-- Navegação -->
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cadastroPet">Pets</a></li>
+        <li><a href="/cadastroVeterinario">Veterinários</a></li>
+        <li><a href="/sobre">Sobre</a></li>
+      </ul>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+      <h1>Formulário</h1>
+      <form action="/cadastroPet" method="POST">
+        <label>Nome</label>
+        <input type="text" name="nome" /><br />
+
+        <label for="especie">Espécie:</label>
+        <select name="especie" id="especie">
+          <option value="cão">Cão</option>
+          <option value="gato">Gato</option>
+        </select>
+        <br />
+
+        <label>Raça</label>
+        <input type="text" name="raca" /><br />
+        <label>Idade</label>
+        <input type="number" name="idade" /><br />
+        <label>Observações</label>
+        <input type="text" name="observacoes" /><br />
+        <button type="sumbit">Cadastrar</button>
+      </form>
+    </div>
+  </body>
+</html>

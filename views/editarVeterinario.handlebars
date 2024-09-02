@@ -1,0 +1,20 @@
+<h1>Formulário Veterinario</h1>
+<form action="/edit-veterinario/{{veterinarios.id}}" method="POST">
+
+  ID:
+  {{veterinarios.id}}
+  <label>Nome</label>
+  <input type="text" name="nome" value="{{veterinarios.nome}}" /><br /><br />
+  <label>CRMV</label>
+  <input type="text" name="crmv" value="{{veterinarios.crmv}}" /><br /><br />
+  <label>Especialidade</label>
+  <input
+    type="text"
+    name="especialidade"
+    value="{{veterinarios.especialidade}}"
+  /><br /><br />
+  <label>Contato</label>
+  <input type="text" name="contato" value="{{veterinarios.contato}}" /><br /><br
+  />
+  <button type="sumbit">Atualizar</button>
+</form>
