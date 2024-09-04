@@ -1,22 +1,24 @@
-<h1>Listar de Animais Cadastrado</h1>
+<div class="container">
+  <h1>Listar de Animais Cadastrado</h1>
 
-{{#each animais}}
-  ID:
-  {{id}}<br />
-  Nome:
-  {{nome}}<br />
-  Espécie:
-  {{especie}}<br />
-  Raça:
-  {{raca}}<br />
-  Idade:
-  {{idade}}<br />
-  Observação:
-  {{observacoes}}<br />
-  Cadastrado:
-  {{#formatDate createdAt}}{{/formatDate}}<br />
-  <a href="/del-pet/{{id}}"><button>Apagar</button></a>
-  <br />
-  <a href="/edit-pet/{{id}}"><button>Editar</button></a>
-  <hr />
-{{/each}}
+  {{#each animais}}
+    ID:
+    {{id}}<br />
+    Nome:
+    {{nome}}<br />
+    Espécie:
+    {{especie}}<br />
+    Raça:
+    {{raca}}<br />
+    Idade:
+    {{idade}}<br />
+    Observação:
+    {{observacoes}}<br />
+    Cadastrado:
+    {{#formatDate createdAt}}{{/formatDate}}<br />
+    <a href="/del-pet/{{id}}"><button>Apagar</button></a>
+    <br />
+    <a href="/edit-pet/{{id}}"><button>Editar</button></a>
+    <hr />
+  {{/each}}
+</div>
