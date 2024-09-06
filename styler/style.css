@@ -63,7 +63,7 @@ nav li:hover .submenu {
   padding: 20px;
   background-color: #fff; /* Cor branca */
   margin: 20px auto;
-  max-width: 300px;
+  max-width: 360px;
   border-radius: 10px; /* Cantos arredondados */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
